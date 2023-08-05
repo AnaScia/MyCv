@@ -1,33 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  color: whitesmoke;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #222831;
 }
 
 header {
+  background-color: #393e46;
+  padding: 20px;
+}
+
+#navbar {
   display: flex;
-  flex-direction: column;
-  background-color: #eddbc7;
-  height: 200px;
+  justify-content: space-between;
+}
+
+div h2 {
+  color: #00fff5;
+  font-size: small;
+  padding: 5px;
 }
 
 #header_img {
   display: flex;
   justify-content: center;
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  max-width: 4%;
+  height: auto;
+  /* height: 131px; */
+  border-radius: 5%;
 }
-#navbar {
+
+#navbar_div {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 #navbar_ul {
   display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
 }
 
 .navbar_li {
   display: flex;
-  margin: 10px;
+  padding: 12px;
+}
+
+a:hover {
+  color: #00fff5;
 }
